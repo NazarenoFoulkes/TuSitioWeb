@@ -281,3 +281,54 @@
 @media (min-width: 1024px) and (max-width: 1280px) {}
 
 @media (min-width: 1680px) and (max-width: 1920px) {}
+
+
+
+/*footer*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: calc(100% - 20px);
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .col {
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (min-width: 992px) {
+    .col {
+        max-width: calc(33.33% - 20px);
+    }
+}
+
+.widget-inside {
+    text-align: center;
+}
+
+.footer-link ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer-link ul li {
+    margin-bottom: 10px;
+}
+
+.footer-link h3 {
+    margin-bottom: 10px;
+}
